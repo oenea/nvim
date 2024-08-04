@@ -45,9 +45,15 @@ return {
         init = function()
             vim.o.timeout = true
             vim.o.timeoutlen = 500
-        end
+        end,
     },
 
+    {
+        'wintermute-cell/gitignore.nvim',
+        config = function()
+            require('gitignore')
+        end,
+    }
     --[[{
 	      'stevearc/conform.nvim',
         opts = {},
